@@ -18,16 +18,21 @@
 @synthesize b1;
 @synthesize b2;
 @synthesize c;
+@synthesize ans1;
+@synthesize ans2;
 @synthesize buttonArr;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    field.keyboardType = UIKeyboardTypeNumberPad;
     field.delegate = self;
     // テキストクリア
     [field setText:@""];
     
     if(self.a < 10){
+        btn.alpha = 0;
+        
         int val1 = self.a + 1;
         //数値を文字列に変換
         NSString * moji;
@@ -45,13 +50,19 @@
         self.c = moji.intValue + moji2.intValue;
     }
     else{
+        btn.alpha = 1;
         test.alpha = 0;
         
-        id msg2 = [NSString stringWithFormat:@"終了"];
+        NSString * result;
+        NSString * result2;
+        result = [ NSString stringWithFormat : @"正答数:%d", self.ans1];
+        result2 = [ NSString stringWithFormat : @"誤答数:%d", self.ans2];
+       
+        id msg2 = [NSString stringWithFormat:@"終了（%@ | %@）",result,result2];
         [label4 setText:msg2];
         field.enabled = NO;
         
-        CGRect r0 = [UIScreen mainScreen].bounds;
+        /*CGRect r0 = [UIScreen mainScreen].bounds;
         CGRect r = CGRectMake(((r0.size.width/2)-(134/2)), 185, 134, 30);
         UIButton * btn = [UIButton buttonWithType:UIButtonTypeRoundedRect];
         btn.frame = r;
@@ -59,8 +70,7 @@
         [btn setTitle:str2 forState: UIControlStateNormal];
         [btn addTarget:self action:@selector(buttonAction2:) forControlEvents:UIControlEventTouchUpInside];
         [buttonArr addObject:btn];
-        [self.view addSubview:btn];
-        
+        [self.view addSubview:btn];*/
     }
 }
 
@@ -77,6 +87,7 @@
 @dynamic label4;
 @dynamic field;
 @dynamic test;
+@dynamic btn;
 
 
 - (IBAction)buttonAction:(id)sender {
@@ -93,10 +104,14 @@
     int str = [field text].intValue;
     
     if (str ==  self.c){
+        self.ans1 = self.ans1 + 1;
+        
         id msg = [NSString stringWithFormat:@"正解...第%d問: %d + %d の答え：%d",self.a,self.b1,self.b2,self.c];
         [label2 setText:msg];
         [self viewDidLoad];
     }else{
+        self.ans2 = self.ans2 + 1;
+        
         id msg = [NSString stringWithFormat:@"不正解...第%d問: %d + %d の答え：%d",self.a,self.b1,self.b2,self.c];
         [label2 setText:msg];
         [self viewDidLoad];
@@ -113,6 +128,9 @@
 }
 
 - (IBAction)buttonAction2:(id)sender {
+    self.ans1 = 0;
+    self.ans2 = 0;
+    
     self.a = 0;
     id msg = [NSString stringWithFormat:@""];
     [label2 setText:msg];
@@ -124,8 +142,34 @@
     
     [self viewDidLoad];
     field.enabled = YES;
-    [sender removeFromSuperview];
+    
+    //[sender removeFromSuperview];
+    btn.alpha = 0;
+
     test.alpha = 1;
+}
+
+
+- (IBAction)inputField{
+    
+    UIView* accessoryView =[[UIView alloc] initWithFrame:CGRectMake(0,0,320,50)];
+    accessoryView.backgroundColor = [UIColor whiteColor];
+    
+    // ボタンを作成
+    UIButton* closeButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+    closeButton.frame = CGRectMake(0,10,100,30);
+    [closeButton setTitle:@"閉じる" forState:UIControlStateNormal];
+    // ボタンを押したときの動作
+    [closeButton addTarget:self action:@selector(closeKeyboard:) forControlEvents:UIControlEventTouchUpInside];
+    // サブビュー作成
+    [accessoryView addSubview:closeButton];
+    
+    field.inputAccessoryView = accessoryView;
+    
+}
+//キーボードを閉じる
+-(void)closeKeyboard:(id)sender{
+    [field resignFirstResponder];
 }
 
 @end

@@ -271,7 +271,7 @@
 				INFOPLIST_FILE = test/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				"MTL_ENABLE_DEBUG_INFO[arch=*]" = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = a.test;
+				PRODUCT_BUNDLE_IDENTIFIER = G79MSNA48E.a.test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -284,7 +284,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				INFOPLIST_FILE = test/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = a.test;
+				PRODUCT_BUNDLE_IDENTIFIER = G79MSNA48E.a.test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

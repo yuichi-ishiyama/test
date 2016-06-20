@@ -16,6 +16,7 @@
     UITextField * field;
     NSMutableArray * buttonArr;
     UIButton * test;
+    UIButton * btn;
 }
 
 @property (nonatomic, retain) IBOutlet UILabel * label;
@@ -23,7 +24,9 @@
 @property (nonatomic, retain) IBOutlet UILabel * label3;
 @property (nonatomic, retain) IBOutlet UILabel * label4;
 @property (nonatomic, retain) IBOutlet UITextField * field;
+- (IBAction)inputField;
 @property (nonatomic, retain) IBOutlet UIButton * test;
+@property (nonatomic, retain) IBOutlet UIButton * btn;
 
 
 @property (retain) NSMutableArray * buttonArr;
@@ -33,6 +36,8 @@
 @property (assign,nonatomic) int b1;
 @property (assign,nonatomic) int b2;
 @property (assign,nonatomic) int c;
+@property (assign,nonatomic) int ans1;
+@property (assign,nonatomic) int ans2;
 
 - (IBAction)buttonAction:(id)sender;
 - (IBAction)buttonAction2:(id)sender;
