@@ -85,6 +85,7 @@
 @dynamic label2;
 @dynamic label3;
 @dynamic label4;
+@dynamic label5;
 @dynamic field;
 @dynamic test;
 @dynamic btn;
@@ -106,13 +107,19 @@
     if (str ==  self.c){
         self.ans1 = self.ans1 + 1;
         
-        id msg = [NSString stringWithFormat:@"正解...第%d問: %d + %d の答え：%d",self.a,self.b1,self.b2,self.c];
+        id msg0 = [NSString stringWithFormat:@"正解..."];
+        label5.textColor = [UIColor blueColor];
+        [label5 setText:msg0];
+        id msg = [NSString stringWithFormat:@"第%d問: %d + %d の答え：%d",self.a,self.b1,self.b2,self.c];
         [label2 setText:msg];
         [self viewDidLoad];
     }else{
         self.ans2 = self.ans2 + 1;
         
-        id msg = [NSString stringWithFormat:@"不正解...第%d問: %d + %d の答え：%d",self.a,self.b1,self.b2,self.c];
+        id msg0 = [NSString stringWithFormat:@"不正解..."];
+        label5.textColor = [UIColor redColor];
+        [label5 setText:msg0];
+        id msg = [NSString stringWithFormat:@"第%d問: %d + %d の答え：%d",self.a,self.b1,self.b2,self.c];
         [label2 setText:msg];
         [self viewDidLoad];
     }
@@ -132,6 +139,8 @@
     self.ans2 = 0;
     
     self.a = 0;
+    id msg0 = [NSString stringWithFormat:@""];
+    [label5 setText:msg0];
     id msg = [NSString stringWithFormat:@""];
     [label2 setText:msg];
     

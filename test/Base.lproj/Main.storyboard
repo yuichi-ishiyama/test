@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G12a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G19a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -29,10 +31,10 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UEu-NG-hKz">
-                                <rect key="frame" x="22" y="237" width="277" height="21"/>
+                                <rect key="frame" x="93" y="237" width="206" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="BRP-p1-Jmd"/>
-                                    <constraint firstAttribute="width" constant="277" id="i4F-nv-FJh"/>
+                                    <constraint firstAttribute="width" constant="206" id="i4F-nv-FJh"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -93,9 +95,16 @@
                                     <action selector="buttonAction2:" destination="BYZ-38-t0r" eventType="touchDown" id="GkV-4L-8lY"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ar4-0J-zJ1">
+                                <rect key="frame" x="7" y="237" width="68" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="UEu-NG-hKz" firstAttribute="leading" secondItem="Ar4-0J-zJ1" secondAttribute="trailing" constant="18" id="0m1-zN-5Ya"/>
                             <constraint firstItem="QrR-ct-ZZp" firstAttribute="leading" secondItem="OpI-Te-aP9" secondAttribute="leading" id="3Sk-2Z-bDV"/>
                             <constraint firstItem="QrR-ct-ZZp" firstAttribute="centerX" secondItem="fo5-Er-HOv" secondAttribute="centerX" id="AIs-Pg-OVp"/>
                             <constraint firstItem="UEu-NG-hKz" firstAttribute="top" secondItem="fo5-Er-HOv" secondAttribute="bottom" constant="22" id="APF-nJ-NgI"/>
@@ -103,11 +112,14 @@
                             <constraint firstItem="QrR-ct-ZZp" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="CfJ-Hd-oc8"/>
                             <constraint firstItem="crE-kq-D6S" firstAttribute="top" secondItem="OpI-Te-aP9" secondAttribute="bottom" constant="34" id="GQP-fe-D9J"/>
                             <constraint firstItem="QrR-ct-ZZp" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="IeX-KK-nAJ"/>
+                            <constraint firstItem="Ar4-0J-zJ1" firstAttribute="baseline" secondItem="UEu-NG-hKz" secondAttribute="baseline" id="JQO-BF-gsE"/>
+                            <constraint firstItem="Ar4-0J-zJ1" firstAttribute="leading" secondItem="H7f-mk-F5m" secondAttribute="leading" id="Oi6-zF-ssG"/>
                             <constraint firstItem="Y5b-Nq-aWa" firstAttribute="top" secondItem="crE-kq-D6S" secondAttribute="bottom" constant="35" id="dn3-QT-98j"/>
+                            <constraint firstItem="Ar4-0J-zJ1" firstAttribute="firstBaseline" secondItem="UEu-NG-hKz" secondAttribute="baseline" id="dqU-Oj-01o"/>
                             <constraint firstItem="OpI-Te-aP9" firstAttribute="top" secondItem="QrR-ct-ZZp" secondAttribute="bottom" constant="8" symbolic="YES" id="esB-al-8G6"/>
                             <constraint firstItem="UEu-NG-hKz" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="237" id="kNA-5Q-qyu"/>
                             <constraint firstItem="QrR-ct-ZZp" firstAttribute="leading" secondItem="crE-kq-D6S" secondAttribute="leading" id="r36-fI-JMw"/>
-                            <constraint firstItem="QrR-ct-ZZp" firstAttribute="centerX" secondItem="UEu-NG-hKz" secondAttribute="centerX" id="rre-G6-HMs"/>
+                            <constraint firstItem="QrR-ct-ZZp" firstAttribute="centerX" secondItem="UEu-NG-hKz" secondAttribute="centerX" constant="-35.5" id="rre-G6-HMs"/>
                             <constraint firstItem="Y5b-Nq-aWa" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="t1G-Pf-Aqx"/>
                             <constraint firstItem="H7f-mk-F5m" firstAttribute="top" secondItem="UEu-NG-hKz" secondAttribute="bottom" constant="18" id="vEc-D4-jX3"/>
                         </constraints>
@@ -121,6 +133,7 @@
                         <outlet property="label2" destination="UEu-NG-hKz" id="Gom-CT-Sle"/>
                         <outlet property="label3" destination="QrR-ct-ZZp" id="Gvy-6B-54F"/>
                         <outlet property="label4" destination="H7f-mk-F5m" id="xSz-OQ-y5o"/>
+                        <outlet property="label5" destination="Ar4-0J-zJ1" id="kz9-nl-Oqi"/>
                         <outlet property="test" destination="fo5-Er-HOv" id="BUu-Ju-DXt"/>
                     </connections>
                 </viewController>
