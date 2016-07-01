@@ -1,0 +1,12 @@
+
+/* Class = "UILabel"; text = "0/10"; ObjectID = "H7f-mk-F5m"; */
+"H7f-mk-F5m.text" = "0/10";
+
+/* Class = "UILabel"; text = "Label3"; ObjectID = "QrR-ct-ZZp"; */
+"QrR-ct-ZZp.text" = "Label3";
+
+/* Class = "UIButton"; normalTitle = "戻る"; ObjectID = "Y5b-Nq-aWa"; */
+"Y5b-Nq-aWa.normalTitle" = "Back";
+
+/* Class = "UIButton"; normalTitle = "回答する"; ObjectID = "fo5-Er-HOv"; */
+"fo5-Er-HOv.normalTitle" = "I answer.";

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EF5840D01D1CF572000016D1 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = EF5840D21D1CF572000016D1 /* Localizable.strings */; };
 		EFEB78661D05D27A00C326CA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EFEB78651D05D27A00C326CA /* main.m */; };
 		EFEB78691D05D27A00C326CA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EFEB78681D05D27A00C326CA /* AppDelegate.m */; };
 		EFEB786C1D05D27A00C326CA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EFEB786B1D05D27A00C326CA /* ViewController.m */; };
@@ -16,6 +17,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EF5840C61D1CECB1000016D1 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Main.strings; sourceTree = "<group>"; };
+		EF5840C71D1CECB1000016D1 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		EF5840CD1D1CEE0C000016D1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
+		EF5840D11D1CF572000016D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
+		EF5840D31D1CF57A000016D1 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
 		EFEB78611D05D27A00C326CA /* test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = test.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFEB78651D05D27A00C326CA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		EFEB78671D05D27A00C326CA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -42,6 +48,7 @@
 		EFEB78581D05D27A00C326CA = {
 			isa = PBXGroup;
 			children = (
+				EF5840D21D1CF572000016D1 /* Localizable.strings */,
 				EFEB78631D05D27A00C326CA /* test */,
 				EFEB78621D05D27A00C326CA /* Products */,
 			);
@@ -121,6 +128,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ja,
 			);
 			mainGroup = EFEB78581D05D27A00C326CA;
 			productRefGroup = EFEB78621D05D27A00C326CA /* Products */;
@@ -138,6 +146,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EFEB78741D05D27A00C326CA /* LaunchScreen.storyboard in Resources */,
+				EF5840D01D1CF572000016D1 /* Localizable.strings in Resources */,
 				EFEB78711D05D27A00C326CA /* Assets.xcassets in Resources */,
 				EFEB786F1D05D27A00C326CA /* Main.storyboard in Resources */,
 			);
@@ -159,10 +168,21 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		EF5840D21D1CF572000016D1 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EF5840D11D1CF572000016D1 /* Base */,
+				EF5840D31D1CF57A000016D1 /* ja */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		EFEB786D1D05D27A00C326CA /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				EFEB786E1D05D27A00C326CA /* Base */,
+				EF5840C61D1CECB1000016D1 /* ja */,
+				EF5840CD1D1CEE0C000016D1 /* en */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -171,6 +191,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				EFEB78731D05D27A00C326CA /* Base */,
+				EF5840C71D1CECB1000016D1 /* ja */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";

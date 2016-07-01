@@ -1,0 +1,27 @@
+/* 
+  Localizable.strings
+  test
+
+  Created by yuichi ishiyama on 2016/06/24.
+  Copyright © 2016年 yuichi ishiyama. All rights reserved.
+*/
+"sampleText1" = "The 1st question";
+"sampleText2" = "The 2nd question";
+"sampleText3" = "The 3rd question";
+"sampleText4" = "The 4th question";
+"sampleText5" = "The 5th question";
+"sampleText6" = "The 6th question";
+"sampleText7" = "The 7th question";
+"sampleText8" = "The 8th question";
+"sampleText9" = "The 9th question";
+"sampleText10" = "The 10th question";
+
+"Correct answer" = "Correct";
+"Wrong answer" = "Wrong";
+
+"result_localize0" = "Correct";
+"result_localize1" = "Wrong";
+"result_localize2" = "finish";
+
+"Correct answer localize" = "Q%d : Ans. %d + %d = %d";
+"Wrong answer localize" = "Q%d : Ans. %d + %d = %d";

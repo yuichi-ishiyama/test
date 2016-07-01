@@ -1,0 +1,28 @@
+/* 
+  Localizable.strings
+  test
+
+  Created by yuichi ishiyama on 2016/06/24.
+  Copyright © 2016年 yuichi ishiyama. All rights reserved.
+*/
+"sampleText1" = "第１問";
+"sampleText2" = "第２問";
+"sampleText3" = "第３問";
+"sampleText4" = "第４問";
+"sampleText5" = "第５問";
+"sampleText6" = "第６問";
+"sampleText7" = "第７問";
+"sampleText8" = "第８問";
+"sampleText9" = "第９問";
+"sampleText10" = "第１０問";
+
+"Correct answer" = "正解";
+"Wrong answer" = "不正解";
+
+
+"result_localize0" = "正答数";
+"result_localize1" = "誤答数";
+"result_localize2" = "終了";
+
+"Correct answer localize" = "第%d問: %d + %d の答え：%d";
+"Wrong answer localize" = "第%d問: %d + %d の答え：%d";
